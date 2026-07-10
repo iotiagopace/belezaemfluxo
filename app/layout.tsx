@@ -59,6 +59,10 @@ export const viewport: Viewport = {
 };
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-SE8JBMPE0S";
+const ATRIVA_SNIPPET =
+  process.env.NEXT_PUBLIC_ATRIVA_SNIPPET ||
+  "https://api.atriva.com.br/api/public/leads/snippet/atv_5af799ed15a2827f8cacec56.js";
 
 export default function RootLayout({
   children,
@@ -82,14 +86,32 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd()) }}
         />
+        <Script id="datalayer-init" strategy="beforeInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+        `}</Script>
         {GTM_ID && (
           <Script id="gtm-init" strategy="afterInteractive">{`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');
           `}</Script>
         )}
-        <Script id="datalayer-init" strategy="beforeInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-        `}</Script>
+        {/* Google Analytics 4 (gtag) */}
+        {GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">{`
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_ID}');
+            `}</Script>
+          </>
+        )}
+        {/* Atriva — captura de leads */}
+        {ATRIVA_SNIPPET && (
+          <Script src={ATRIVA_SNIPPET} strategy="afterInteractive" />
+        )}
       </head>
       <body>
         {GTM_ID && (
