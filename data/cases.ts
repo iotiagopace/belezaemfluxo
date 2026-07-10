@@ -50,4 +50,22 @@ export const SITE_CASES: SiteCase[] = [
     name: "checkfast vistorias",
     domain: "checkfastvistorias.com.br",
   },
+  {
+    url: "https://landing.hemissul.com.br/",
+    type: "proteção veicular",
+    name: "hemissul",
+    domain: "landing.hemissul.com.br",
+  },
+  {
+    url: "https://imobiliaria-ks.vercel.app/",
+    type: "imobiliária",
+    name: "imobiliária ks",
+    domain: "imobiliaria-ks.vercel.app",
+  },
+  {
+    url: "https://trancatto-novo.vercel.app/",
+    type: "artesanato · decoração",
+    name: "trançatto",
+    domain: "trancatto-novo.vercel.app",
+  },
 ];
