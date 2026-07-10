@@ -47,7 +47,7 @@ const equipe = [
 
 export default function UrbanoPage() {
   return (
-    <div className="min-h-screen bg-black text-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div className="model-page model-urbano min-h-screen bg-black text-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       <ModelPageBar modeloNome="Urbano" modeloSlug="urbano" />
 
       {/* Hero */}

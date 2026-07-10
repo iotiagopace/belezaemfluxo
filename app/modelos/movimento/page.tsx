@@ -61,7 +61,7 @@ export default function MovimentoPage() {
   const active = categorias.find((c) => c.id === tab) ?? categorias[0];
 
   return (
-    <div className="min-h-screen bg-white text-neutral-900" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
+    <div className="model-page model-movimento min-h-screen bg-white text-neutral-900" style={{ fontFamily: "'Space Grotesk', 'Inter', sans-serif" }}>
       <ModelPageBar modeloNome="Movimento" modeloSlug="movimento" />
 
       {/* Hero */}

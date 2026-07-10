@@ -39,7 +39,7 @@ const depoimentos = [
 export default function EssenciaPage() {
   return (
     <div
-      className="min-h-screen"
+      className="model-page model-essencia min-h-screen"
       style={{
         background: "linear-gradient(180deg, #fbf3ee 0%, #f5e9df 40%, #fbf3ee 100%)",
         color: "#1c1614",

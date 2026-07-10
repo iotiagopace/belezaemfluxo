@@ -33,7 +33,7 @@ const cursos = [
 
 export default function TracoPage() {
   return (
-    <div className="min-h-screen" style={{ background: "#f2ede4", color: "#1a120c", fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div className="model-page model-traco min-h-screen" style={{ background: "#f2ede4", color: "#1a120c", fontFamily: "'Inter', system-ui, sans-serif" }}>
       <ModelPageBar modeloNome="Traço" modeloSlug="traco" />
 
       {/* Hero editorial */}

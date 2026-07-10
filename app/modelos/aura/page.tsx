@@ -45,7 +45,7 @@ const faqs = [
 export default function AuraPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   return (
-    <div className="min-h-screen bg-white text-neutral-900" style={{ fontFamily: "Inter, system-ui, sans-serif" }}>
+    <div className="model-page model-aura min-h-screen bg-white text-neutral-900" style={{ fontFamily: "Inter, system-ui, sans-serif" }}>
       <ModelPageBar modeloNome="Aura" modeloSlug="aura" />
 
       {/* Hero */}

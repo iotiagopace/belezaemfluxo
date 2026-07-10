@@ -1,0 +1,13 @@
+/* Hallmark - design-system: design.md */
+:root {
+  --model-space-xs: 0.75rem;
+  --model-space-sm: 1rem;
+  --model-space-md: 1.5rem;
+  --model-space-lg: 2rem;
+  --model-space-xl: 3rem;
+  --model-space-2xl: 4.5rem;
+  --model-space-3xl: 7rem;
+  --model-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --model-duration: 420ms;
+  --model-focus: #1683ff;
+}

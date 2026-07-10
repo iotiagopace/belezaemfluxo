@@ -408,6 +408,8 @@ belezaemfluxo/
 
 ## O que ainda pode melhorar (não bloqueia produção)
 
+> Atualização de 10/07/2026: a diversificação visual dos seis templates foi aplicada. Cada rota agora possui assinatura estrutural própria por segmento, a barra de demonstração ficou mais discreta e a galeria comercial passou a enfatizar a comparação entre direções de marca. Permanecem recomendados testes visuais automatizados e a substituição das imagens de demonstração por assets finais do cliente.
+
 1. **Rewrite completo dos componentes de LP** — atualmente eles usam `text-white`/`bg-black` com override CSS. Uma abordagem mais limpa seria refatorar cada componente pra usar `text-neutral-900`/`bg-neutral-50` diretamente. Beneficia manutenibilidade e elimina a necessidade de `.lp-scope` e `.dark-on-light`. Não fiz porque é ~15 componentes e a alternativa atual funciona.
 
 2. **Testes visuais automatizados** — nada existe. Para o próximo grande refactor, valeria adicionar Playwright + snapshot tests nas 8 páginas principais.

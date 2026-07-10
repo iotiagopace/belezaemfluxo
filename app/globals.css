@@ -1,3 +1,4 @@
+@import "../tokens.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +18,66 @@ html, body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+html, body { overflow-x: clip; }
+
+/* Hallmark - genre: editorial - design-system: design.md */
+.model-page {
+  isolation: isolate;
+}
+.model-page h1,
+.model-page h2 { overflow-wrap: anywhere; min-width: 0; }
+.model-page a:focus-visible,
+.model-page button:focus-visible,
+.model-page input:focus-visible,
+.model-page textarea:focus-visible {
+  outline: 3px solid var(--model-focus);
+  outline-offset: 3px;
+}
+.model-page img {
+  transition: transform var(--model-duration) var(--model-ease-out),
+    filter var(--model-duration) var(--model-ease-out);
+}
+.model-page section:hover img { transform: scale(1.015); }
+
+/* Each model gets a structural signature, not only a palette swap. */
+.model-essencia section:nth-of-type(3) .container-max,
+.model-traco section:nth-of-type(4) .container-max { max-width: 68rem; }
+.model-essencia section:nth-of-type(4) .grid > :nth-child(2),
+.model-traco section:nth-of-type(4) .grid > :nth-child(2) { transform: translateY(2.5rem); }
+
+.model-aura section { border-top: 1px solid rgba(23, 35, 29, 0.12); }
+.model-aura section:nth-of-type(2) .grid > :nth-child(even) { padding-left: 2rem; }
+.model-aura section:nth-of-type(3) article { border-radius: 0; box-shadow: none; }
+
+.model-movimento section:nth-of-type(2) .container-max,
+.model-movimento section:nth-of-type(3) .container-max { max-width: 90rem; }
+.model-movimento section:nth-of-type(3) .grid > :nth-child(even) { transform: translateY(2rem); }
+
+.model-forma section:nth-of-type(2) .grid > :nth-child(even) .relative { order: 2; }
+.model-forma section:nth-of-type(3) .grid > :first-child { grid-column: span 2; }
+.model-forma section:nth-of-type(4) blockquote { border-radius: 0; }
+
+.model-urbano section { border-top: 1px solid rgba(255,255,255,.12); }
+.model-urbano section:nth-of-type(2) .container-max { max-width: 72rem; }
+.model-urbano section:nth-of-type(2) .grid { font-family: "Barlow Condensed", sans-serif; }
+
+@media (max-width: 767px) {
+  .model-essencia section:nth-of-type(4) .grid > :nth-child(2),
+  .model-traco section:nth-of-type(4) .grid > :nth-child(2),
+  .model-movimento section:nth-of-type(3) .grid > :nth-child(even) { transform: none; }
+  .model-urbano h1 { font-size: clamp(3.5rem, 18vw, 5.5rem); }
+  .model-page section { scroll-margin-top: 7rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .model-page *, .model-page *::before, .model-page *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Metry-specific display typography */

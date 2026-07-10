@@ -59,7 +59,7 @@ const avaliacoes = [
 
 export default function FormaPage() {
   return (
-    <div className="min-h-screen bg-[#0b0b0b] text-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
+    <div className="model-page model-forma min-h-screen bg-[#0b0b0b] text-white" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       <ModelPageBar modeloNome="Forma" modeloSlug="forma" />
 
       {/* Hero */}
