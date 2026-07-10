@@ -1,6 +1,7 @@
 import ShinyText from "@/components/ShinyText";
 import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
 import CRMShowcase from "@/components/CRMShowcase";
+import CRMProductShots from "@/components/CRMProductShots";
 
 const beneficios = [
   { t: "novas pessoas interessadas", d: "visualize quem entrou em contato e qual serviço despertou interesse." },
@@ -39,6 +40,8 @@ export default function CRMSection() {
           visão organizada dos atendimentos — tudo no mesmo canal que o cliente
           já usa.
         </p>
+
+        <CRMProductShots />
 
         <div className="mt-20">
           <Reveal>
