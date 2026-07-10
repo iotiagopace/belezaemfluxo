@@ -2,12 +2,12 @@ import ShinyText from "@/components/ShinyText";
 import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
 
 const items = [
-  { t: "mostre seus serviços", d: "apresente procedimentos, diferenciais e informações importantes de forma clara." },
-  { t: "valorize seu portfólio", d: "organize fotos de trabalhos, ambientes, resultados e transformações." },
-  { t: "facilite o contato", d: "direcione a pessoa para o whatsapp, formulário ou canal de atendimento correto." },
-  { t: "apresente sua localização", d: "inclua endereço, mapa, horários e informações necessárias para a visita." },
-  { t: "fortaleça sua marca", d: "tenha uma apresentação alinhada à identidade visual do seu negócio." },
-  { t: "prepare sua divulgação", d: "utilize uma página estruturada para campanhas no instagram, facebook e google." },
+  { t: "mostre seus serviços", d: "cada procedimento com nome, valor e o que está incluso. sem precisar mandar por áudio." },
+  { t: "valorize seu portfólio", d: "fotos de trabalhos, ambientes e resultados num lugar que não some no feed." },
+  { t: "facilite o contato", d: "botão de whatsapp, formulário e canais direto no topo. o cliente decide como falar." },
+  { t: "mostre onde você fica", d: "endereço, mapa e horário na hora. sem precisar procurar no story fixado." },
+  { t: "reforce a marca", d: "cor, logo e tom de voz consistentes em todo lugar que sua página aparecer." },
+  { t: "prepare pra anúncio", d: "página estruturada pra rodar campanha no instagram, facebook e google quando quiser." },
 ];
 
 export default function ValueProposition() {
@@ -17,12 +17,11 @@ export default function ValueProposition() {
         <Reveal>
           <p className="section-label mb-6">/ o que muda</p>
           <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
-            um endereço profissional para <ShinyText>apresentar</ShinyText> o seu negócio.
+            um lugar único pra <ShinyText>apresentar</ShinyText> o seu negócio.
           </h2>
           <p className="mt-8 max-w-2xl text-white/70 text-[17px] leading-relaxed">
-            sua página passa a ser o ponto central da sua divulgação. use no
-            instagram, no whatsapp, no google, em anúncios, cartões digitais,
-            mensagens e materiais impressos.
+            sua página vira o link que você manda no whatsapp, coloca na bio,
+            usa no anúncio. tudo que importa fica junto e você para de repetir.
           </p>
         </Reveal>
 

@@ -36,11 +36,11 @@ function PipelineCard() {
       </div>
 
       <h3 className="text-neutral-900 text-2xl md:text-3xl font-semibold tracking-tight">
-        Pipeline visual em Kanban
+        Funil visual em Kanban
       </h3>
       <p className="mt-4 text-neutral-600 text-[15px] leading-relaxed max-w-sm">
-        Arraste negócios entre etapas, edite valores in-line e crie campos
-        personalizados. Cada movimento vira um evento rastreável no histórico.
+        Arraste o contato entre as etapas, edita valor na hora, cria campo
+        do jeito do seu negócio. Todo movimento fica registrado.
       </p>
 
       {/* Kanban mockup */}
@@ -127,8 +127,8 @@ function WhatsAppCard() {
         WhatsApp nativo
       </h3>
       <p className="mt-4 text-white/85 text-[15px] leading-relaxed max-w-sm">
-        Conversas e contatos do CRM no mesmo lugar. O WhatsApp é canal
-        principal — não plugin, não integração de terceiros.
+        Conversa e contato no mesmo lugar. O WhatsApp já vem por dentro. Não
+        é plugin. Não é integração de terceiro.
       </p>
 
       {/* Chat mockup */}

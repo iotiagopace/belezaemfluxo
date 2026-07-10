@@ -1,10 +1,10 @@
 import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
 
 const cards = [
-  { n: "01", t: "serviços espalhados", d: "o cliente precisa perguntar quais procedimentos você oferece, como funcionam e onde você atende." },
-  { n: "02", t: "portfólio sem organização", d: "fotos, resultados e depoimentos ficam misturados com todos os outros conteúdos das redes sociais." },
-  { n: "03", t: "contatos esquecidos", d: "uma pessoa chama no whatsapp, você não responde naquele momento e a conversa acaba ficando para trás." },
-  { n: "04", t: "pouca visão do atendimento", d: "fica difícil saber quantas pessoas demonstraram interesse, quais precisam de retorno e quais realmente contrataram." },
+  { n: "01", t: "serviços espalhados", d: "o cliente pergunta o que você faz, como funciona e onde você atende. e você responde tudo de novo, toda vez." },
+  { n: "02", t: "portfólio bagunçado", d: "fotos, resultados e depoimentos se perdem no meio dos outros posts do instagram." },
+  { n: "03", t: "contato esquecido", d: "chegou no whatsapp num dia corrido. você não respondeu na hora. sumiu." },
+  { n: "04", t: "sem visão do atendimento", d: "quantas pessoas chegaram esse mês? quantas fecharam? você tenta contar na cabeça." },
 ];
 
 export default function ProblemSection() {
@@ -14,13 +14,12 @@ export default function ProblemSection() {
         <Reveal>
           <p className="section-label mb-6">/ o problema</p>
           <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
-            quando alguém conhece seu trabalho, o que encontra?
+            quando alguém procura o seu trabalho, o que encontra?
           </h2>
           <p className="mt-8 max-w-2xl text-white/70 text-[17px] leading-relaxed">
-            muitos negócios de beleza fazem um trabalho excelente, mas ainda
-            apresentam seus serviços apenas pelo instagram ou enviam fotos e
-            informações separadamente pelo whatsapp. isso dificulta a escolha
-            do cliente e deixa o atendimento dependente de respostas manuais.
+            o trabalho é bom. mas a apresentação continua no instagram, no
+            print do celular, no áudio do whatsapp. o cliente fica na dúvida.
+            você fica no piloto manual.
           </p>
         </Reveal>
 

@@ -14,8 +14,8 @@ export default function SitesCases() {
               <ShinyText>resultado</ShinyText> em produção.
             </h2>
             <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-              uma amostra dos sites que a metry já entregou. o mesmo padrão de
-              performance, seo e integrações que sua página de beleza recebe.
+              uma amostra dos sites que a metry já colocou no ar. o mesmo
+              padrão que sua página de beleza recebe.
             </p>
           </div>
         </Reveal>
@@ -72,7 +72,7 @@ export default function SitesCases() {
         </RevealStagger>
 
         <p className="mt-10 text-center text-xs text-white/40 lowercase">
-          projetos entregues pela metry · disponíveis para consulta pública
+          projetos no ar pela metry · abertos pra você conferir
         </p>
       </div>
     </section>

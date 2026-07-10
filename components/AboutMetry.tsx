@@ -9,16 +9,16 @@ export default function AboutMetry() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-20 items-start">
           <div>
             <h2 className="display text-white text-4xl md:text-6xl">
-              um produto desenvolvido pela <ShinyText>metry</ShinyText>.
+              um produto feito pela <ShinyText>metry</ShinyText>.
             </h2>
             <p className="mt-8 text-white/70 text-[16px] leading-relaxed max-w-lg">
-              a beleza em fluxo é uma solução criada pela metry para facilitar
-              o acesso de pequenos e médios negócios de beleza a uma presença
-              digital profissional e a uma gestão comercial mais organizada.
+              a beleza em fluxo nasceu pra colocar quem trabalha com beleza no
+              digital sem drama. página profissional, contatos no lugar e uma
+              agência do lado.
             </p>
             <p className="mt-4 text-white/60 text-[15px] leading-relaxed max-w-lg">
-              nossa equipe atua com desenvolvimento de sites, páginas de
-              conversão, crm, automações, mídia e tecnologia.
+              a metry entrega site, sistema, crm, automação e mídia pra
+              empresa que quer crescer com processo.
             </p>
             <a
               href="https://metry.cc"

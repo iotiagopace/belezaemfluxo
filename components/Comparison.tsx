@@ -1,38 +1,38 @@
 const columns = [
   {
-    title: "sem página estruturada",
+    title: "sem página",
     tone: "muted",
     items: [
-      "serviços enviados manualmente",
-      "informações espalhadas",
-      "dependência exclusiva do instagram",
-      "fotos difíceis de localizar",
-      "dúvidas repetidas",
-      "contatos perdidos em conversas antigas",
+      "serviço explicado por áudio",
+      "informação espalhada",
+      "só o instagram como vitrine",
+      "foto perdida no meio do feed",
+      "a mesma pergunta cinco vezes",
+      "contato que somiu na conversa antiga",
     ],
   },
   {
     title: "com página profissional",
     tone: "brand",
     items: [
-      "serviços apresentados em um único lugar",
+      "serviço reunido num link",
       "portfólio organizado",
-      "endereço próprio para divulgação",
-      "acesso direto ao whatsapp",
-      "formulário de interesse",
-      "apresentação mais profissional",
+      "endereço próprio pra divulgar",
+      "botão de whatsapp direto",
+      "formulário pra chegar informação",
+      "cara profissional na hora certa",
     ],
   },
   {
-    title: "com página + gestão de contatos",
+    title: "com página + crm",
     tone: "white",
     items: [
-      "novos contatos organizados",
-      "etapas de atendimento",
-      "tarefas de retorno",
-      "histórico de oportunidades",
-      "valores registrados",
-      "visão do que avançou ou não",
+      "cada novo contato num lugar só",
+      "etapa clara do atendimento",
+      "tarefa pra retomar quem sumiu",
+      "histórico de cada oportunidade",
+      "valor em negociação visível",
+      "quem fechou, quem não fechou, e por quê",
     ],
   },
 ];
@@ -43,7 +43,7 @@ export default function Comparison() {
       <div className="container-max">
         <p className="section-label mb-6">/ comparação</p>
         <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
-          uma operação mais simples para quem atende — e para quem quer contratar.
+          uma operação mais simples pra quem atende. e pra quem quer contratar.
         </h2>
         <div className="mt-16 grid gap-5 lg:grid-cols-3">
           {columns.map((c) => {

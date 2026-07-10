@@ -17,25 +17,25 @@ const SHOTS: Shot[] = [
     id: "pipeline",
     label: "Pipeline",
     caption:
-      "Funil visual em Kanban. Arraste negócios entre etapas, edite valores in-line e filtre por período, dono ou etapa.",
+      "O funil em Kanban. Cada contato numa etapa. Arrasta pra próxima quando avança. Filtra por período, dono e etapa.",
     src: "/images/atriva-pipeline.png",
-    alt: "Tela de Pipeline do Atriva CRM — 4 colunas (Novo Lead, Qualificado, Em Contato, Proposta Enviada) com deals de exemplo",
+    alt: "Tela de Pipeline do Atriva CRM com 4 colunas (Novo Lead, Qualificado, Em Contato, Proposta Enviada) e cards de exemplo",
   },
   {
     id: "dashboard",
     label: "Dashboard",
     caption:
-      "Visão geral do funil — negócios criados, propostas, taxa de conversão, ticket médio, tempo médio e gargalo do mês.",
+      "Os números do mês num só painel. Quantos entraram, quantos avançaram, taxa de conversão, ticket médio e onde tá travando.",
     src: "/images/atriva-dashboard.png",
-    alt: "Dashboard do Atriva CRM com KPIs, funil de vendas e tarefas do dia",
+    alt: "Dashboard do Atriva CRM com KPIs, funil e tarefas do dia",
   },
   {
     id: "tarefas",
     label: "Tarefas",
     caption:
-      "Cada oportunidade vira uma tarefa com dono, prazo e prioridade. Nada morre por falta de follow-up.",
+      "Cada contato vira uma tarefa com prazo e prioridade. Ninguém fica esperando resposta sem que você saiba.",
     src: "/images/atriva-tarefas.png",
-    alt: "Tela de Tarefas do Atriva CRM com lista de atividades por prioridade e prazo",
+    alt: "Tela de Tarefas do Atriva CRM com lista de atividades por prioridade",
   },
 ];
 
@@ -50,12 +50,12 @@ export default function CRMProductShots() {
           <div>
             <p className="section-label mb-4">/ dentro do atriva</p>
             <h3 className="display text-white text-3xl md:text-5xl max-w-2xl">
-              a mesma central que a metry usa por dentro.
+              o mesmo painel que a metry usa por dentro.
             </h3>
           </div>
           <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-            três telas que você passa a usar no dia a dia: o funil, os números
-            do mês e as tarefas em aberto.
+            três telas que passam a fazer parte do seu dia: o funil, o
+            resultado do mês e as tarefas em aberto.
           </p>
         </div>
 

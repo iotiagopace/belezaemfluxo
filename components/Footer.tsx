@@ -12,12 +12,12 @@ const navLinks = [
 ];
 
 const modelLinks = [
-  { label: "Essência — cílios e sobrancelhas", href: "/modelos/essencia" },
-  { label: "Aura — clínicas e studios", href: "/modelos/aura" },
-  { label: "Movimento — salões com equipe", href: "/modelos/movimento" },
-  { label: "Traço — marca pessoal", href: "/modelos/traco" },
-  { label: "Forma — premium editorial", href: "/modelos/forma" },
-  { label: "Urbano — barbearias", href: "/modelos/urbano" },
+  { label: "Essência · cílios e sobrancelhas", href: "/modelos/essencia" },
+  { label: "Aura · clínicas e studios", href: "/modelos/aura" },
+  { label: "Movimento · salões com equipe", href: "/modelos/movimento" },
+  { label: "Traço · marca pessoal", href: "/modelos/traco" },
+  { label: "Forma · premium editorial", href: "/modelos/forma" },
+  { label: "Urbano · barbearias", href: "/modelos/urbano" },
 ];
 
 export default function Footer() {
@@ -31,8 +31,8 @@ export default function Footer() {
               beleza em fluxo <span className="text-neutral-500">by metry</span>
             </div>
             <p className="mt-5 text-sm text-neutral-600 leading-relaxed max-w-sm">
-              Presença profissional e contatos organizados para o seu negócio de
-              beleza. Um produto Metry.
+              Página profissional e contatos organizados pro seu negócio de beleza.
+              Um produto Metry.
             </p>
             <div className="mt-6 flex gap-3">
               <a
@@ -106,7 +106,7 @@ export default function Footer() {
                   @cc.metry
                 </a>
               </li>
-              <li className="text-sm text-neutral-600">São Paulo, SP — Brasil</li>
+              <li className="text-sm text-neutral-600">São Paulo, SP · Brasil</li>
               <li className="text-sm text-neutral-600">Seg–Sex, 9h–18h</li>
             </ul>
             <a

@@ -6,20 +6,20 @@ import { faqJsonLd } from "@/lib/seo";
 import Reveal from "@/components/Reveal";
 
 const faqs = [
-  { q: "a página é criada do zero?", a: "você escolhe um dos modelos disponíveis. a metry personaliza a estrutura com sua identidade visual, serviços, textos, imagens e contatos. projetos totalmente exclusivos são orçados separadamente." },
-  { q: "posso utilizar meu domínio?", a: "sim. a página pode ser instalada em um domínio já existente ou em um novo domínio registrado para o seu negócio." },
-  { q: "o domínio está incluído?", a: "o registro do domínio deve ser cobrado ou contratado separadamente. a equipe orienta o processo." },
-  { q: "a página funciona no celular?", a: "sim. todos os modelos são preparados para celulares, tablets e computadores." },
-  { q: "posso colocar o link no instagram?", a: "sim. o endereço pode ser utilizado na bio, no whatsapp, em anúncios, no google e em outros canais." },
-  { q: "posso alterar os serviços futuramente?", a: "sim. alterações após a publicação podem ser contratadas separadamente ou incluídas em um plano de manutenção." },
-  { q: "o que preciso enviar?", a: "logo, cores da marca, fotos, lista de serviços, informações sobre o negócio, endereço, whatsapp, instagram e demais contatos." },
-  { q: "a metry cria os textos?", a: "a página inclui a organização e adaptação dos conteúdos essenciais. produções extensas ou projetos de posicionamento são contratados separadamente." },
-  { q: "a página já inclui agendamento online?", a: "a estrutura pode direcionar para o whatsapp, formulário ou sistema externo. uma integração específica depende da ferramenta utilizada." },
-  { q: "o crm substitui o whatsapp?", a: "não. o whatsapp continua sendo um canal de conversa. o crm ajuda a organizar contatos, etapas e acompanhamentos." },
-  { q: "o crm controla o caixa do salão?", a: "a estrutura comercial acompanha oportunidades e valores. não é apresentada como sistema contábil ou financeiro sem que esses módulos estejam contratados." },
-  { q: "existe mensalidade?", a: "a página profissional pode ter renovação de hospedagem, manutenção ou domínio. no plano com crm, a licença do atriva consta na proposta." },
-  { q: "posso parcelar?", a: "sim. o pagamento pode ser realizado em até 10 vezes no cartão, com acréscimo da taxa da operadora." },
-  { q: "qual é o prazo de entrega?", a: "o prazo começa após o envio completo dos materiais e é informado no momento da contratação." },
+  { q: "a página é feita do zero?", a: "não. você escolhe um dos 6 modelos e a gente personaliza com sua marca, serviços, foto e contato. quer projeto exclusivo, do zero mesmo? a gente orça separado." },
+  { q: "posso usar meu domínio?", a: "sim. se você já tem, a gente instala nele. se ainda não tem, a gente ajuda a registrar." },
+  { q: "o domínio está incluído no preço?", a: "não. o registro do domínio você contrata direto (uns 40 a 60 reais por ano). a gente orienta o processo." },
+  { q: "funciona no celular?", a: "sim. todos os modelos foram feitos pensando primeiro no celular. e também rodam em tablet e desktop." },
+  { q: "posso colocar o link no instagram?", a: "sim. o link vai na bio, no whatsapp, em anúncio, no google. onde você quiser." },
+  { q: "e se eu quiser mudar serviço depois?", a: "sim. mudança pequena a gente resolve na hora. mudanças mais grandes viram um pacote de manutenção." },
+  { q: "o que preciso mandar?", a: "logo, cor da marca, foto, lista de serviço, endereço, whatsapp, instagram. a gente manda um formulário só com os itens." },
+  { q: "vocês escrevem os textos?", a: "a gente organiza e adapta o texto que você mandar. copy do zero ou reposicionamento de marca são pacotes à parte." },
+  { q: "vem com agendamento online?", a: "vem com botão de whatsapp e formulário. se você já usa alguma agenda tipo calendly ou trinks, a gente conecta. sistema próprio de agendamento é outro projeto." },
+  { q: "o crm substitui o whatsapp?", a: "não. o whatsapp continua sendo o canal onde você conversa. o crm serve pra organizar o que aconteceu com cada pessoa que chegou." },
+  { q: "o crm controla o caixa do salão?", a: "não. o crm cuida do funil comercial (contato, orçamento, negociação). caixa e financeiro são outro tipo de sistema." },
+  { q: "tem mensalidade?", a: "a página tem custo anual de hospedagem e domínio (baixo). no plano com crm, tem a licença do atriva. tudo consta na proposta antes de você fechar." },
+  { q: "posso parcelar?", a: "sim. até 10x no cartão. a taxa da operadora entra no valor parcelado." },
+  { q: "qual o prazo?", a: "5 dias úteis em média, contando a partir do dia que você manda todos os materiais." },
 ];
 
 export default function FAQ() {

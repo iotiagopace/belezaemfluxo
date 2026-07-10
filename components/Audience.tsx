@@ -18,11 +18,11 @@ export default function Audience() {
         <p className="section-label mb-6">/ para quem é</p>
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
           <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
-            criado para quem trabalha com beleza.
+            feito pra quem trabalha com beleza.
           </h2>
           <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-            não importa se você atende individualmente ou possui uma equipe. a
-            estrutura é adaptada ao tamanho e aos serviços do seu negócio.
+            atende sozinha ou tem equipe? não faz diferença. a página se
+            ajusta no que você tem hoje.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">

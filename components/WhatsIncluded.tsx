@@ -2,23 +2,23 @@ import { Check } from "@/components/icons";
 import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
 
 const items = [
-  "personalização com sua marca",
-  "cores e identidade visual",
+  "sua marca aplicada",
+  "cor e identidade visual",
   "apresentação dos serviços",
   "galeria de fotos",
-  "seção sobre o negócio ou profissional",
-  "depoimentos ou avaliações",
+  "seção sobre você ou o negócio",
+  "depoimentos de cliente",
   "endereço e mapa",
   "horário de atendimento",
-  "instagram e redes sociais",
-  "botões para whatsapp",
+  "instagram e redes",
+  "botão de whatsapp",
   "formulário de contato",
-  "versão para celular, tablet e computador",
-  "configuração básica para o google",
+  "versão pra celular, tablet e desktop",
+  "configuração pro google achar",
   "certificado de segurança",
-  "instalação no domínio",
-  "estrutura preparada para mensuração",
-  "uma rodada de ajustes antes da publicação",
+  "instalação no seu domínio",
+  "preparado pra medir resultado",
+  "uma rodada de ajuste antes de publicar",
 ];
 
 export default function WhatsIncluded() {
@@ -26,14 +26,14 @@ export default function WhatsIncluded() {
     <section id="incluso" className="section-divider bg-black py-24 md:py-32">
       <div className="container-max">
         <Reveal>
-          <p className="section-label mb-6">/ o que está incluso</p>
+          <p className="section-label mb-6">/ o que vem junto</p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
             <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
-              sua página pronta para divulgar.
+              sua página pronta pra divulgar.
             </h2>
             <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-              a metry recebe os seus materiais, personaliza o modelo escolhido e
-              publica a página com as principais informações do seu negócio.
+              você manda seus materiais. a metry personaliza o modelo, publica
+              e entrega no ar.
             </p>
           </div>
         </Reveal>
@@ -53,7 +53,7 @@ export default function WhatsIncluded() {
         </RevealStagger>
 
         <p className="mt-8 text-xs text-white/40 lowercase">
-          * o cliente fornece logo, imagens, serviços, contatos e demais informações para a personalização.
+          * você entra com logo, foto, lista de serviço, endereço, contato e o que mais quiser mostrar.
         </p>
       </div>
     </section>

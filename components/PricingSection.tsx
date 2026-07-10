@@ -7,28 +7,28 @@ import { Check, ArrowRight } from "@/components/icons";
 import Reveal from "@/components/Reveal";
 
 const planoPagina = [
-  "página personalizada",
-  "modelo escolhido",
-  "versão para celular",
+  "página personalizada com sua marca",
+  "modelo que você escolheu",
+  "versão pra celular",
   "serviços, galeria e localização",
-  "whatsapp e formulário",
-  "configuração básica para o google",
-  "instalação e publicação",
-  "uma rodada de ajustes",
+  "whatsapp e formulário no ar",
+  "aparecer no google",
+  "instalada e publicada",
+  "uma rodada de ajuste",
 ];
 
 const planoCompleto = [
-  "todos os itens da página profissional",
-  "configuração inicial do atriva",
-  "pipeline personalizado",
-  "etapas do atendimento",
-  "integração do formulário",
-  "campos para serviços e interesses",
-  "organização das oportunidades",
-  "tarefas de acompanhamento",
-  "visualização de valores",
+  "tudo da página profissional",
+  "atriva configurado",
+  "funil montado do seu jeito",
+  "etapas de atendimento",
+  "formulário conectado no crm",
+  "campos de serviço e interesse",
+  "oportunidade organizada por etapa",
+  "tarefa de retorno",
+  "valor em negociação",
   "treinamento inicial",
-  "suporte de ativação",
+  "suporte na ativação",
 ];
 
 type Props = { onSelectPlan: (plan: "pagina" | "completo") => void };
@@ -64,7 +64,7 @@ export default function PricingSection({ onSelectPlan }: Props) {
         <Reveal>
           <p className="section-label mb-6">/ planos</p>
           <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
-            escolha a opção que combina com o momento do seu negócio.
+            escolha o que combina com o momento do seu negócio.
           </h2>
         </Reveal>
 
@@ -76,7 +76,7 @@ export default function PricingSection({ onSelectPlan }: Props) {
             </div>
             <h3 className="mt-6 display text-white text-2xl md:text-3xl">página profissional</h3>
             <p className="mt-3 text-white/60 text-[15px] leading-relaxed">
-              para quem precisa apresentar melhor o negócio e facilitar o contato.
+              pra quem quer parar de mandar print e áudio explicando os serviços.
             </p>
             <div className="mt-8">
               <div className="display text-white text-5xl md:text-6xl">r$ 1.000</div>
@@ -125,7 +125,7 @@ export default function PricingSection({ onSelectPlan }: Props) {
             </div>
             <h3 className="mt-6 display text-white text-2xl md:text-3xl">página + gestão de contatos</h3>
             <p className="mt-3 text-white/70 text-[15px] leading-relaxed">
-              para quem também precisa organizar os novos contatos e acompanhar as oportunidades.
+              pra quem também quer ver na tela o que aconteceu com cada contato.
             </p>
             <div className="mt-8">
               <div className="display text-white text-5xl md:text-6xl">r$ 1.200</div>
@@ -166,9 +166,9 @@ export default function PricingSection({ onSelectPlan }: Props) {
         </div>
 
         <div className="mt-10 grid gap-2 text-xs text-white/40 lowercase max-w-3xl">
-          <p>* a taxa da operadora do cartão será acrescentada ao valor parcelado.</p>
-          <p>as condições de licença, mensalidade e continuidade do atriva devem ser apresentadas de acordo com o plano contratado.</p>
-          <p>domínio, hospedagem, manutenção e integrações extras devem constar claramente na proposta.</p>
+          <p>* a taxa da operadora entra no valor parcelado.</p>
+          <p>licença, mensalidade e continuidade do atriva a gente combina na proposta, sem letra miúda.</p>
+          <p>domínio, hospedagem e integração extra também. você sabe o que paga antes de assinar.</p>
         </div>
       </div>
     </section>

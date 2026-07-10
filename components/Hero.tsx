@@ -44,17 +44,17 @@ export default function Hero() {
           className="display text-white text-5xl md:text-8xl max-w-6xl leading-[0.95]"
           {...fade(0.15)}
         >
-          uma <ShinyText>página profissional</ShinyText> para o seu trabalho.
-          contatos organizados para o seu negócio.
+          uma <ShinyText>página profissional</ShinyText> pro seu trabalho.
+          contatos no lugar certo pro seu negócio.
         </motion.h1>
 
         <motion.p
           className="mt-10 max-w-2xl text-white/70 text-lg md:text-xl leading-relaxed"
           {...fade(0.35)}
         >
-          escolha um modelo criado para o segmento de beleza. a metry
-          personaliza a página com sua marca, fotos e serviços — e conecta um
-          crm para você acompanhar cada nova pessoa interessada.
+          escolha um modelo pensado pra beleza. a metry personaliza com sua
+          marca, fotos e serviços. no plano completo, você também recebe um
+          crm pra acompanhar quem chega.
         </motion.p>
 
         <motion.div className="mt-10 flex flex-wrap gap-3" {...fade(0.55)}>
@@ -93,8 +93,8 @@ export default function Hero() {
           className="mt-14 max-w-2xl text-xs text-white/50 lowercase leading-relaxed"
           {...fade(0.85)}
         >
-          para salões de beleza, espaços de estética, cílios, sobrancelhas,
-          unhas, maquiagem, cabelo, barbearias e profissionais independentes.
+          serve pra salão, estética, cílios, sobrancelhas, unhas, maquiagem,
+          cabelo, barbearia e quem atende sozinho.
         </motion.p>
       </div>
     </section>

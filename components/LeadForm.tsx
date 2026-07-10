@@ -121,13 +121,13 @@ export default function LeadForm({ presetModelo, presetPlano }: Props) {
 
   const contextualMessage = useMemo(() => {
     if (form.possui_site === "Tenho apenas Instagram") {
-      return "seu instagram pode continuar sendo um canal importante. a página organiza as informações que hoje ficam espalhadas.";
+      return "seu instagram continua ativo. a página só junta o que hoje fica espalhado.";
     }
     if (form.organizacao_contatos === "CRM") {
-      return "ótimo. nossa equipe pode avaliar se faz sentido manter sua ferramenta atual ou apresentar o atriva.";
+      return "boa. a gente vê se dá pra continuar com o que você já usa ou se o atriva encaixa melhor.";
     }
     if (form.organizacao_contatos === "Não tenho processo definido") {
-      return "o plano completo pode ajudar a organizar os contatos desde o primeiro atendimento.";
+      return "o plano completo entra bem aqui. ajuda a organizar cada contato desde o primeiro dia.";
     }
     return "";
   }, [form.possui_site, form.organizacao_contatos]);
@@ -188,11 +188,11 @@ export default function LeadForm({ presetModelo, presetPlano }: Props) {
         <div className="mx-auto max-w-3xl">
           <p className="section-label mb-6">/ formulário</p>
           <h2 className="display text-white text-4xl md:text-6xl">
-            conte um pouco sobre o seu negócio.
+            conta um pouco do seu negócio.
           </h2>
           <p className="mt-6 text-white/70 text-[16px] leading-relaxed">
-            preencha os dados e nossa equipe apresentará os modelos mais
-            adequados para você.
+            você preenche em 2 minutos. a gente retorna com os modelos que
+            fazem sentido pro seu momento.
           </p>
 
           {modeloLabel && (
@@ -291,15 +291,14 @@ export default function LeadForm({ presetModelo, presetPlano }: Props) {
                 className="mt-1 h-4 w-4 accent-white"
               />
               <span className="lowercase leading-relaxed">
-                ao enviar, você concorda em receber contato da equipe sobre esta
-                solicitação. seus dados serão utilizados para atendimento e
-                apresentação da solução.
+                ao enviar, você aceita receber contato da equipe sobre esta
+                solicitação. seus dados ficam só com a gente, pra este atendimento.
               </span>
             </label>
 
             <div className="sm:col-span-2 mt-4 flex flex-wrap gap-3">
               <button type="submit" disabled={submitting} className="btn-primary disabled:opacity-60">
-                {submitting ? "enviando…" : "quero receber os detalhes"}
+                {submitting ? "enviando…" : "quero receber a proposta"}
                 <ArrowRight size={16} />
               </button>
               <a

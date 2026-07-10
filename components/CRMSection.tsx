@@ -4,14 +4,14 @@ import CRMShowcase from "@/components/CRMShowcase";
 import CRMProductShots from "@/components/CRMProductShots";
 
 const beneficios = [
-  { t: "novas pessoas interessadas", d: "visualize quem entrou em contato e qual serviço despertou interesse." },
-  { t: "atendimentos pendentes", d: "saiba quais conversas ainda precisam de resposta ou acompanhamento." },
-  { t: "etapa de cada contato", d: "veja quem está em atendimento, aguardando retorno, agendado ou concluído." },
-  { t: "histórico de informações", d: "registre serviço procurado, observações, valores e próximos passos." },
-  { t: "tarefas de retorno", d: "organize lembretes para não esquecer de retomar uma conversa." },
-  { t: "valores em negociação", d: "acompanhe os valores relacionados às oportunidades comerciais registradas." },
-  { t: "desempenho do atendimento", d: "observe quantos contatos chegaram, avançaram ou não contrataram." },
-  { t: "visão para a equipe", d: "as pessoas responsáveis pelo atendimento acompanham a mesma operação." },
+  { t: "novo contato chegando", d: "veja quem chegou hoje e qual serviço a pessoa procurou." },
+  { t: "atendimento em aberto", d: "quais conversas ainda estão esperando resposta ou retorno." },
+  { t: "etapa do contato", d: "quem está sendo atendido, quem agendou, quem fechou, quem não fechou." },
+  { t: "histórico junto", d: "serviço, observação, valor combinado, próximo passo. tudo no mesmo card." },
+  { t: "tarefas pra retomar", d: "lembretes pra você não esquecer daquele orçamento pendente." },
+  { t: "valores em negociação", d: "quanto tem no funil agora e o que vale a pena correr atrás." },
+  { t: "resultado do mês", d: "quantos chegaram, quantos avançaram, quantos fecharam. sem planilha." },
+  { t: "visão da equipe", d: "todo mundo que atende vê o mesmo painel e ninguém pisa no calo do outro." },
 ];
 
 export default function CRMSection() {
@@ -22,13 +22,12 @@ export default function CRMSection() {
           <p className="section-label mb-6">/ crm · disponível no plano completo</p>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
             <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
-              o contato chegou. agora você precisa saber{" "}
+              o contato chegou. você precisa saber{" "}
               <ShinyText>o que aconteceu</ShinyText> com ele.
             </h2>
             <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-              no plano página + gestão de contatos, os formulários da página são
-              conectados ao atriva. cada nova pessoa interessada entra em uma
-              central organizada por etapas.
+              no plano completo, os formulários da sua página caem direto no
+              atriva. cada pessoa entra numa fila organizada por etapa.
             </p>
           </div>
         </Reveal>
@@ -36,18 +35,17 @@ export default function CRMSection() {
         <CRMShowcase />
 
         <p className="mt-12 max-w-2xl text-white/70 text-[15px] leading-relaxed">
-          em vez de procurar conversas antigas no whatsapp, você passa a ter uma
-          visão organizada dos atendimentos — tudo no mesmo canal que o cliente
-          já usa.
+          em vez de rolar conversa antiga no whatsapp pra achar quem prometeu
+          voltar, você abre a tela e vê tudo em ordem.
         </p>
 
         <CRMProductShots />
 
         <div className="mt-20">
           <Reveal>
-            <p className="section-label mb-6">/ benefícios</p>
+            <p className="section-label mb-6">/ o que muda no dia a dia</p>
             <h3 className="display text-white text-3xl md:text-5xl max-w-3xl">
-              mais clareza para cuidar das oportunidades.
+              você para de perder oportunidade por esquecimento.
             </h3>
           </Reveal>
           <RevealStagger
