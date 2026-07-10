@@ -15,37 +15,37 @@ export const CANONICAL = (path = "/") =>
 
 export const MODELOS_META = {
   essencia: {
-    title: "Modelo Essência — Página profissional para cílios, sobrancelhas e maquiagem",
+    title: "Modelo Essência · Página profissional para cílios, sobrancelhas e maquiagem",
     description:
       "Página profissional leve e feminina para profissionais de cílios, sobrancelhas, maquiagem e serviços independentes de beleza.",
     ogAlt: "Prévia do modelo Essência",
   },
   aura: {
-    title: "Modelo Aura — Página para clínicas de estética e studios",
+    title: "Modelo Aura · Página para clínicas de estética e studios",
     description:
       "Modelo minimalista e sofisticado para clínicas estéticas, studios e espaços de beleza com posicionamento cuidadoso.",
     ogAlt: "Prévia do modelo Aura",
   },
   movimento: {
-    title: "Modelo Movimento — Salões com equipe e múltiplos serviços",
+    title: "Modelo Movimento · Salões com equipe e múltiplos serviços",
     description:
       "Modelo moderno e dinâmico para salões com equipe, categorias de serviços de cabelo, unhas, maquiagem e agenda organizada.",
     ogAlt: "Prévia do modelo Movimento",
   },
   traco: {
-    title: "Modelo Traço — Marca pessoal para designers e especialistas",
+    title: "Modelo Traço · Marca pessoal para designers e especialistas",
     description:
       "Modelo editorial para designers de sobrancelhas, lash designers e especialistas que constroem autoridade na própria marca.",
     ogAlt: "Prévia do modelo Traço",
   },
   forma: {
-    title: "Modelo Forma — Editorial premium para salões e clínicas",
+    title: "Modelo Forma · Editorial premium para salões e clínicas",
     description:
       "Modelo editorial premium com imagens grandes para salões, clínicas e studios com posicionamento superior.",
     ogAlt: "Prévia do modelo Forma",
   },
   urbano: {
-    title: "Modelo Urbano — Barbearias, salões unissex e cabelo",
+    title: "Modelo Urbano · Barbearias, salões unissex e cabelo",
     description:
       "Modelo direto e contemporâneo para barbearias, salões unissex e profissionais de cabelo.",
     ogAlt: "Prévia do modelo Urbano",

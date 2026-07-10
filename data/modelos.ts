@@ -127,7 +127,7 @@ export const MODELOS: Modelo[] = [
     nome: "Forma",
     estilo: "Editorial, premium, imagens grandes",
     descricao:
-      "Para salões, clínicas e studios com posicionamento superior — quem cobra bem e quer parecer bem.",
+      "Para salão, clínica e studio com posicionamento superior. Pra quem cobra bem e quer parecer bem.",
     segmentoLabel: "Premium · Alto ticket",
     segmentos: ["saloes", "estetica"],
     destaques: [

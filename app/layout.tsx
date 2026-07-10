@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Beleza em Fluxo · by Metry — Página profissional e CRM para negócios de beleza",
+    default: "Beleza em Fluxo · by Metry · Página profissional e CRM para negócios de beleza",
     template: "%s · Beleza em Fluxo by Metry",
   },
   description: SITE.description,
