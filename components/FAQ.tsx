@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { track } from "@/lib/analytics";
+import { faqJsonLd } from "@/lib/seo";
+import Reveal from "@/components/Reveal";
 
 const faqs = [
   { q: "a página é criada do zero?", a: "você escolhe um dos modelos disponíveis. a metry personaliza a estrutura com sua identidade visual, serviços, textos, imagens e contatos. projetos totalmente exclusivos são orçados separadamente." },
@@ -25,11 +27,17 @@ export default function FAQ() {
 
   return (
     <section id="faq" className="section-divider bg-black py-24 md:py-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }}
+      />
       <div className="container-max">
-        <p className="section-label mb-6">/ dúvidas</p>
-        <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
-          perguntas frequentes.
-        </h2>
+        <Reveal>
+          <p className="section-label mb-6">/ dúvidas</p>
+          <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
+            perguntas frequentes.
+          </h2>
+        </Reveal>
         <div className="mt-12 grid gap-2 max-w-3xl">
           {faqs.map((item, idx) => {
             const isOpen = openIdx === idx;

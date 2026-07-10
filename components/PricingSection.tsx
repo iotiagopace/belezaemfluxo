@@ -2,7 +2,9 @@
 
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { track } from "@/lib/analytics";
+import { serviceJsonLd } from "@/lib/seo";
 import { Check, ArrowRight } from "@/components/icons";
+import Reveal from "@/components/Reveal";
 
 const planoPagina = [
   "página personalizada",
@@ -34,11 +36,37 @@ type Props = { onSelectPlan: (plan: "pagina" | "completo") => void };
 export default function PricingSection({ onSelectPlan }: Props) {
   return (
     <section id="planos" className="section-divider bg-black py-24 md:py-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            serviceJsonLd(
+              "Página profissional para negócios de beleza",
+              "Página personalizada + modelo escolhido + versão mobile + galeria + WhatsApp + formulário + configuração para Google + instalação e uma rodada de ajustes.",
+              1000
+            )
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            serviceJsonLd(
+              "Página profissional + Gestão de contatos (CRM Atriva)",
+              "Todos os itens da página profissional + implantação Atriva + pipeline + integrações + treinamento e suporte de ativação.",
+              1200
+            )
+          ),
+        }}
+      />
       <div className="container-max">
-        <p className="section-label mb-6">/ planos</p>
-        <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
-          escolha a opção que combina com o momento do seu negócio.
-        </h2>
+        <Reveal>
+          <p className="section-label mb-6">/ planos</p>
+          <h2 className="display text-white text-4xl md:text-6xl max-w-3xl">
+            escolha a opção que combina com o momento do seu negócio.
+          </h2>
+        </Reveal>
 
         <div className="mt-16 grid gap-5 md:gap-6 lg:grid-cols-2">
           <article className="rounded-2xl border border-white/10 bg-white/5 p-8 md:p-10 flex flex-col">

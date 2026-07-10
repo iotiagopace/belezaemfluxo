@@ -1,31 +1,61 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { SITE, orgJsonLd } from "@/lib/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://belezaemfluxo.metry.com.br"),
+  metadataBase: new URL(SITE.url),
   title: {
-    default: "beleza em fluxo · by metry — página profissional e crm para negócios de beleza",
-    template: "%s · beleza em fluxo by metry",
+    default: "Beleza em Fluxo · by Metry — Página profissional e CRM para negócios de beleza",
+    template: "%s · Beleza em Fluxo by Metry",
   },
-  description:
-    "página profissional para o seu negócio de beleza + central de contatos que organiza cada nova oportunidade. a partir de r$ 1.000 em até 10x no cartão.",
+  description: SITE.description,
+  applicationName: SITE.name,
+  authors: [{ name: "Metry", url: "https://metry.cc" }],
+  creator: "Metry",
+  publisher: "Metry",
+  category: "business",
+  alternates: {
+    canonical: SITE.url,
+  },
   openGraph: {
-    title: "beleza em fluxo · by metry",
+    title: "Beleza em Fluxo · by Metry",
     description:
-      "escolha um modelo criado para o segmento de beleza. personalize com sua marca. organize seus contatos.",
-    url: "https://belezaemfluxo.metry.com.br",
-    siteName: "beleza em fluxo · by metry",
+      "Escolha um modelo criado para o segmento de beleza. Personalize com sua marca. Organize seus contatos.",
+    url: SITE.url,
+    siteName: SITE.name,
     type: "website",
-    locale: "pt_BR",
+    locale: SITE.locale,
   },
   twitter: {
     card: "summary_large_image",
-    title: "beleza em fluxo · by metry",
+    title: "Beleza em Fluxo · by Metry",
     description:
-      "página profissional para o seu negócio de beleza. a partir de r$ 1.000.",
+      "Página profissional para o seu negócio de beleza. A partir de R$ 1.000.",
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  width: "device-width",
+  initialScale: 1,
 };
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "";
@@ -45,8 +75,12 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&family=League+Spartan:wght@500;600;700;800&family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Cormorant:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=League+Spartan:wght@500;600;700;800&family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&family=Cormorant:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd()) }}
         />
         {GTM_ID && (
           <Script id="gtm-init" strategy="afterInteractive">{`

@@ -4,6 +4,7 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { track } from "@/lib/analytics";
 import { ArrowRight, Check } from "@/components/icons";
 import ShinyText from "@/components/ShinyText";
+import Reveal from "@/components/Reveal";
 
 const bullets = [
   "retorno em até 1 dia útil",
@@ -15,7 +16,7 @@ export default function FinalCTA() {
   return (
     <section className="section-divider bg-black py-24 md:py-32">
       <div className="container-max grid gap-12 lg:grid-cols-2 lg:gap-20 items-start">
-        <div>
+        <Reveal>
           <p className="section-label mb-6">/ primeiro passo</p>
           <h2 className="display text-white text-4xl md:text-6xl mb-8">
             vamos entender o que sua <ShinyText>operação</ShinyText> precisa hoje.
@@ -49,9 +50,9 @@ export default function FinalCTA() {
               falar pelo whatsapp
             </a>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="rounded-2xl bg-white/5 border border-white/10 p-8 md:p-10">
+        <Reveal delay={0.1} className="rounded-2xl bg-white/5 border border-white/10 p-8 md:p-10">
           <p className="section-label mb-6">/ o que cobre</p>
           <h3 className="display text-white text-2xl md:text-4xl">
             página, crm e apresentação profissional em um só lugar.
@@ -73,7 +74,7 @@ export default function FinalCTA() {
               pagamento em até 10x no cartão*
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

@@ -1,13 +1,14 @@
 import ShinyText from "@/components/ShinyText";
+import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
 
 const etapas = [
-  { n: "01", t: "novo contato" },
-  { n: "02", t: "em atendimento" },
-  { n: "03", t: "aguardando resposta" },
-  { n: "04", t: "agendamento em andamento" },
-  { n: "05", t: "agendado" },
-  { n: "06", t: "serviço contratado" },
-  { n: "07", t: "não avançou" },
+  { n: "01", t: "novo contato", clientes: [147, 148, 152] },
+  { n: "02", t: "em atendimento", clientes: [138, 141, 146] },
+  { n: "03", t: "aguardando resposta", clientes: [126, 132, 135] },
+  { n: "04", t: "agendamento em andamento", clientes: [118, 124, 129] },
+  { n: "05", t: "agendado", clientes: [109, 114, 121] },
+  { n: "06", t: "serviço contratado", clientes: [101, 105, 112] },
+  { n: "07", t: "não avançou", clientes: [92, 95, 99] },
 ];
 
 const beneficios = [
@@ -25,17 +26,20 @@ export default function CRMSection() {
   return (
     <section id="crm" className="section-divider bg-black py-24 md:py-32">
       <div className="container-max">
-        <p className="section-label mb-6">/ crm · disponível no plano completo</p>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-          <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
-            o contato chegou. agora você precisa saber <ShinyText>o que aconteceu</ShinyText> com ele.
-          </h2>
-          <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
-            no plano página + gestão de contatos, os formulários da página são
-            conectados ao atriva. cada nova pessoa interessada entra em uma
-            central organizada por etapas.
-          </p>
-        </div>
+        <Reveal>
+          <p className="section-label mb-6">/ crm · disponível no plano completo</p>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <h2 className="display text-white text-4xl md:text-6xl max-w-4xl">
+              o contato chegou. agora você precisa saber{" "}
+              <ShinyText>o que aconteceu</ShinyText> com ele.
+            </h2>
+            <p className="max-w-md text-white/60 text-[15px] leading-relaxed">
+              no plano página + gestão de contatos, os formulários da página são
+              conectados ao atriva. cada nova pessoa interessada entra em uma
+              central organizada por etapas.
+            </p>
+          </div>
+        </Reveal>
 
         <div className="mt-16 -mx-6 md:mx-0 overflow-x-auto pb-3">
           <div className="flex gap-3 px-6 md:px-0 min-w-max">
@@ -50,12 +54,12 @@ export default function CRMSection() {
                 </div>
                 <div className="mt-4 display text-white text-lg lowercase">{etapa.t}</div>
                 <div className="mt-5 space-y-2">
-                  {[0, 1, 2].map((n) => (
+                  {etapa.clientes.map((n) => (
                     <div
                       key={n}
                       className="rounded-md border border-white/10 bg-black/40 p-2 text-[11px] text-white/40 lowercase"
                     >
-                      cliente #{Math.floor(Math.random() * 800) + 100}
+                      cliente #{n}
                     </div>
                   ))}
                 </div>
@@ -70,19 +74,24 @@ export default function CRMSection() {
         </p>
 
         <div className="mt-20">
-          <p className="section-label mb-6">/ benefícios</p>
-          <h3 className="display text-white text-3xl md:text-5xl max-w-3xl">
-            mais clareza para cuidar das oportunidades.
-          </h3>
-          <div className="mt-12 grid gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden md:grid-cols-2 lg:grid-cols-4">
+          <Reveal>
+            <p className="section-label mb-6">/ benefícios</p>
+            <h3 className="display text-white text-3xl md:text-5xl max-w-3xl">
+              mais clareza para cuidar das oportunidades.
+            </h3>
+          </Reveal>
+          <RevealStagger
+            className="mt-12 grid gap-px bg-white/10 border border-white/10 rounded-2xl overflow-hidden md:grid-cols-2 lg:grid-cols-4"
+            stagger={0.05}
+          >
             {beneficios.map((b, i) => (
-              <div key={b.t} className="bg-black p-6 md:p-8">
+              <RevealItem key={b.t} className="bg-black p-6 md:p-8">
                 <div className="metry-num">0{i + 1}</div>
                 <div className="mt-6 display text-white text-lg">{b.t}</div>
                 <p className="mt-3 text-white/60 text-[13px] leading-relaxed">{b.d}</p>
-              </div>
+              </RevealItem>
             ))}
-          </div>
+          </RevealStagger>
         </div>
       </div>
     </section>
