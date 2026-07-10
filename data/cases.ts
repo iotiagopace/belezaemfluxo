@@ -68,4 +68,16 @@ export const SITE_CASES: SiteCase[] = [
     name: "trançatto",
     domain: "trancatto-novo.vercel.app",
   },
+  {
+    url: "https://www.lokmais.com/",
+    type: "locação de motos",
+    name: "lokmais",
+    domain: "lokmais.com",
+  },
+  {
+    url: "https://flashcar-henna.vercel.app/",
+    type: "compra e venda de carros",
+    name: "flash car store",
+    domain: "flashcar-henna.vercel.app",
+  },
 ];
