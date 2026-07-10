@@ -1,0 +1,65 @@
+{
+  "page_view": {
+    "trigger": "carregamento da página"
+  },
+  "view_models": {
+    "trigger": "entrada na seção de modelos"
+  },
+  "filter_models": {
+    "params": [
+      "segmento"
+    ]
+  },
+  "view_model_demo": {
+    "params": [
+      "modelo",
+      "segmento"
+    ]
+  },
+  "select_model": {
+    "params": [
+      "modelo",
+      "segmento"
+    ]
+  },
+  "view_crm_section": {
+    "trigger": "50% da seção CRM visível"
+  },
+  "view_pricing": {
+    "trigger": "entrada na seção de planos"
+  },
+  "select_plan": {
+    "params": [
+      "plano",
+      "valor"
+    ]
+  },
+  "whatsapp_click": {
+    "params": [
+      "cta_origem",
+      "modelo",
+      "plano",
+      "sdr"
+    ]
+  },
+  "form_start": {
+    "trigger": "primeira interação"
+  },
+  "form_submit": {
+    "params": [
+      "segmento",
+      "plano",
+      "modelo",
+      "origem",
+      "sdr"
+    ]
+  },
+  "faq_open": {
+    "params": [
+      "pergunta"
+    ]
+  },
+  "thank_you_view": {
+    "trigger": "página de obrigado"
+  }
+}
