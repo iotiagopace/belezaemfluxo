@@ -111,7 +111,7 @@ export default function Footer() {
             </ul>
             <a
               href="#formulario"
-              className="inline-flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors"
+              className="dark-on-light inline-flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-neutral-800 transition-colors"
             >
               Fale conosco
               <ArrowRight size={14} />

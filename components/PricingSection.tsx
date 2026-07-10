@@ -115,7 +115,7 @@ export default function PricingSection({ onSelectPlan }: Props) {
             </div>
           </article>
 
-          <article className="relative rounded-2xl border border-white bg-white/10 p-8 md:p-10 flex flex-col">
+          <article className="dark-on-light relative rounded-2xl bg-neutral-900 p-8 md:p-10 flex flex-col shadow-xl">
             <div className="absolute -top-3 right-6 rounded-full bg-white px-3 py-1 text-xs font-medium text-black lowercase">
               opção mais completa
             </div>
@@ -143,20 +143,20 @@ export default function PricingSection({ onSelectPlan }: Props) {
             </ul>
             <div className="mt-8 flex flex-wrap gap-3">
               <button
-                className="btn-primary text-sm"
+                className="inline-flex items-center gap-2 rounded-full bg-white text-neutral-900 px-6 py-3 text-sm font-medium hover:bg-neutral-100 transition-colors"
                 onClick={() => {
                   track.packageSelect("completo");
                   onSelectPlan("completo");
                 }}
               >
-                quero página + crm
+                <span className="keep-black">quero página + crm</span>
                 <ArrowRight size={14} />
               </button>
               <a
                 href={buildWhatsAppUrl({ kind: "plano-completo" })}
                 target="_blank"
                 rel="noreferrer"
-                className="btn-secondary text-sm"
+                className="inline-flex items-center gap-2 rounded-full border border-white/50 text-white px-6 py-3 text-sm font-medium hover:bg-white/10 transition-colors"
                 onClick={() => track.whatsappClick("pricing", { plano: "completo" })}
               >
                 tirar dúvidas

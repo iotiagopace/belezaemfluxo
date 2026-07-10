@@ -58,7 +58,7 @@ export default function Header() {
         <div className="hidden md:block">
           <a
             href="#modelos"
-            className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors"
+            className="dark-on-light inline-flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white hover:bg-neutral-800 transition-colors"
           >
             Escolher meu modelo
             <ArrowRight size={14} />
@@ -99,7 +99,7 @@ export default function Header() {
           ))}
           <a
             href="#modelos"
-            className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-900 px-5 py-3 text-sm font-medium text-white"
+            className="dark-on-light mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-neutral-900 px-5 py-3 text-sm font-medium text-white"
             onClick={() => setOpen(false)}
           >
             Escolher meu modelo
