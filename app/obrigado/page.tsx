@@ -12,13 +12,13 @@ import { ArrowRight, Check } from "@/components/icons";
 
 export default function ObrigadoPage() {
   return (
-    <>
+    <div className="lp-scope">
       <Header />
       <Suspense fallback={null}>
         <Content />
       </Suspense>
       <Footer />
-    </>
+    </div>
   );
 }
 

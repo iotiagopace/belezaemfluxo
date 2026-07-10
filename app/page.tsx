@@ -73,7 +73,7 @@ function HomeContent() {
   }, []);
 
   return (
-    <>
+    <div className="lp-scope">
       <Header />
       <main className="pb-24 md:pb-0">
         <Hero />
@@ -100,6 +100,6 @@ function HomeContent() {
       <Footer />
       <FloatingWhatsApp origin="floating" />
       <StickyMobileBar />
-    </>
+    </div>
   );
 }

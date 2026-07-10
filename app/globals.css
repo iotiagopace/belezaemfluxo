@@ -184,55 +184,48 @@ html, body {
 /* =========================================================
    Overrides: mapeamos as classes que estavam pensadas para
    fundo escuro (bg-black, text-white/x, bg-white/x, border-white/x)
-   para o equivalente em fundo claro. Não precisamos reescrever
-   nenhum componente.
+   para o equivalente em fundo claro.
+
+   IMPORTANTE: TODOS os overrides são escopados dentro de `.lp-scope`
+   para não vazar para as páginas de modelo (que usam o tema escuro
+   como intencional). Só a LP e /obrigado devem envolver o conteúdo
+   em <div className="lp-scope">.
    ========================================================= */
 
-.bg-black { background-color: var(--color-bg) !important; }
+.lp-scope .bg-black { background-color: var(--color-bg) !important; }
 
-.text-white { color: #0a0a0a !important; }
-.text-white\/90 { color: rgba(10,10,10,0.85) !important; }
-.text-white\/80 { color: rgba(10,10,10,0.75) !important; }
-.text-white\/70 { color: rgba(10,10,10,0.65) !important; }
-.text-white\/60 { color: rgba(10,10,10,0.55) !important; }
-.text-white\/50 { color: rgba(10,10,10,0.45) !important; }
-.text-white\/40 { color: rgba(10,10,10,0.4) !important; }
-.text-white\/30 { color: rgba(10,10,10,0.3) !important; }
+.lp-scope .text-white { color: #0a0a0a !important; }
+.lp-scope .text-white\/90 { color: rgba(10,10,10,0.85) !important; }
+.lp-scope .text-white\/80 { color: rgba(10,10,10,0.75) !important; }
+.lp-scope .text-white\/70 { color: rgba(10,10,10,0.65) !important; }
+.lp-scope .text-white\/60 { color: rgba(10,10,10,0.55) !important; }
+.lp-scope .text-white\/50 { color: rgba(10,10,10,0.45) !important; }
+.lp-scope .text-white\/40 { color: rgba(10,10,10,0.4) !important; }
+.lp-scope .text-white\/30 { color: rgba(10,10,10,0.3) !important; }
 
-.bg-white\/5 { background-color: rgba(10,10,10,0.03) !important; }
-.bg-white\/10 { background-color: rgba(10,10,10,0.06) !important; }
-.bg-white\/85 { background-color: rgba(255,255,255,0.85) !important; }
-.bg-white\/95 { background-color: rgba(255,255,255,0.95) !important; }
+.lp-scope .bg-white\/5 { background-color: rgba(10,10,10,0.03) !important; }
+.lp-scope .bg-white\/10 { background-color: rgba(10,10,10,0.06) !important; }
+.lp-scope .bg-white\/85 { background-color: rgba(255,255,255,0.85) !important; }
+.lp-scope .bg-white\/95 { background-color: rgba(255,255,255,0.95) !important; }
 
-.border-white\/10 { border-color: rgba(10,10,10,0.08) !important; }
-.border-white\/15 { border-color: rgba(10,10,10,0.12) !important; }
-.border-white\/20 { border-color: rgba(10,10,10,0.15) !important; }
-.border-white\/30 { border-color: rgba(10,10,10,0.25) !important; }
-.border-white { border-color: #0a0a0a !important; }
+.lp-scope .border-white\/10 { border-color: rgba(10,10,10,0.08) !important; }
+.lp-scope .border-white\/15 { border-color: rgba(10,10,10,0.12) !important; }
+.lp-scope .border-white\/20 { border-color: rgba(10,10,10,0.15) !important; }
+.lp-scope .border-white\/30 { border-color: rgba(10,10,10,0.25) !important; }
+.lp-scope .border-white { border-color: #0a0a0a !important; }
 
-.hover\:bg-white\/5:hover { background-color: rgba(10,10,10,0.03) !important; }
-.hover\:bg-white\/10:hover { background-color: rgba(10,10,10,0.06) !important; }
-.hover\:border-white\/30:hover { border-color: rgba(10,10,10,0.25) !important; }
-.hover\:text-white:hover { color: #0a0a0a !important; }
+.lp-scope .hover\:bg-white\/5:hover { background-color: rgba(10,10,10,0.03) !important; }
+.lp-scope .hover\:bg-white\/10:hover { background-color: rgba(10,10,10,0.06) !important; }
+.lp-scope .hover\:border-white\/30:hover { border-color: rgba(10,10,10,0.25) !important; }
+.lp-scope .hover\:text-white:hover { color: #0a0a0a !important; }
 
-/* Cards de plano com "bg-white/10" em cima do bg-black estavam servindo
-   como destaque; no light-mode viram um cinza mais escurinho. */
-article.rounded-2xl.bg-white\/10 {
+.lp-scope article.rounded-2xl.bg-white\/10 {
   background-color: rgba(10,10,10,0.06) !important;
 }
 
-/* Hero: já usa gradiente radial; ajustamos pra fundo claro sutil */
-.pointer-events-none {
-  /* keep as-is */
-}
+.lp-scope .bg-black\/95 { background-color: rgba(255,255,255,0.95) !important; }
 
-/* Botão preto/branco no plano completo:
-   o .btn-primary já é preto no light theme — nada a mudar. */
-
-/* Sticky mobile bar: era bg-black/95 → agora branco translúcido */
-.bg-black\/95 { background-color: rgba(255,255,255,0.95) !important; }
-
-/* Overlay em imagens (não invertemos) */
+/* Overlay em imagens (não invertemos — sempre preto translúcido) */
 .bg-black\/70 { background-color: rgba(0,0,0,0.7) !important; }
 .bg-black\/60 { background-color: rgba(0,0,0,0.6) !important; }
 .bg-black\/40 { background-color: rgba(0,0,0,0.4) !important; }
