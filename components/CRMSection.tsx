@@ -1,15 +1,6 @@
 import ShinyText from "@/components/ShinyText";
 import Reveal, { RevealStagger, RevealItem } from "@/components/Reveal";
-
-const etapas = [
-  { n: "01", t: "novo contato", clientes: [147, 148, 152] },
-  { n: "02", t: "em atendimento", clientes: [138, 141, 146] },
-  { n: "03", t: "aguardando resposta", clientes: [126, 132, 135] },
-  { n: "04", t: "agendamento em andamento", clientes: [118, 124, 129] },
-  { n: "05", t: "agendado", clientes: [109, 114, 121] },
-  { n: "06", t: "serviço contratado", clientes: [101, 105, 112] },
-  { n: "07", t: "não avançou", clientes: [92, 95, 99] },
-];
+import CRMShowcase from "@/components/CRMShowcase";
 
 const beneficios = [
   { t: "novas pessoas interessadas", d: "visualize quem entrou em contato e qual serviço despertou interesse." },
@@ -41,36 +32,12 @@ export default function CRMSection() {
           </div>
         </Reveal>
 
-        <div className="mt-16 -mx-6 md:mx-0 overflow-x-auto pb-3">
-          <div className="flex gap-3 px-6 md:px-0 min-w-max">
-            {etapas.map((etapa) => (
-              <div
-                key={etapa.n}
-                className="w-60 flex-shrink-0 rounded-2xl border border-white/10 bg-white/5 p-5"
-              >
-                <div className="flex items-center justify-between">
-                  <span className="metry-num">{etapa.n}</span>
-                  <span className="inline-block h-1.5 w-1.5 rounded-full bg-white/40" />
-                </div>
-                <div className="mt-4 display text-white text-lg lowercase">{etapa.t}</div>
-                <div className="mt-5 space-y-2">
-                  {etapa.clientes.map((n) => (
-                    <div
-                      key={n}
-                      className="rounded-md border border-white/10 bg-black/40 p-2 text-[11px] text-white/40 lowercase"
-                    >
-                      cliente #{n}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <CRMShowcase />
 
-        <p className="mt-10 max-w-2xl text-white/70 text-[15px] leading-relaxed">
+        <p className="mt-12 max-w-2xl text-white/70 text-[15px] leading-relaxed">
           em vez de procurar conversas antigas no whatsapp, você passa a ter uma
-          visão organizada dos atendimentos.
+          visão organizada dos atendimentos — tudo no mesmo canal que o cliente
+          já usa.
         </p>
 
         <div className="mt-20">
