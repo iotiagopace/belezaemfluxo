@@ -33,12 +33,6 @@ export const SITE_CASES: SiteCase[] = [
     domain: "dranaielisantana.com.br",
   },
   {
-    url: "https://www.frutmel.com.br/",
-    type: "indústria · alimentos",
-    name: "frutmel",
-    domain: "frutmel.com.br",
-  },
-  {
     url: "https://www.sevenperformance.com.br/",
     type: "consultoria · franquias",
     name: "seven performance",
